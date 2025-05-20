@@ -6,6 +6,7 @@ Precisa estar instalado em sua máquina:
 
 Node.Js 
 Biblioteca prompt-sync 
+Editor como por exemplo o Visual Studio Code.
 
 # Como executar:
 Abrir o terminal; 
