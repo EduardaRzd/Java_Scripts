@@ -1,0 +1,99 @@
+/* Cores e Box Model */
+header, main, footer {
+  background-color: #f0f0f0;
+  color: #333;
+  margin: 20px;
+  padding: 20px;
+  border: 2px solid #999;
+}
+
+/* h2 estilizado */
+h2 {
+  font-size: 1.8em;
+  text-decoration: underline;
+}
+
+/* Classe destaque */
+.destaque {
+  font-style: italic;
+  background-color: #fef6e4;
+}
+
+/* ID importante */
+#importante {
+  border-top: 4px solid #f00;
+}
+
+/* Galeria (para exercício 6) */
+.galeria-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin: 20px;
+}
+
+.galeria-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 15px;
+  width: 80%;
+}
+
+.galeria-grid figure {
+  margin: 0;
+  text-align: center;
+}
+
+.galeria-grid img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+/* Media Query para Grid Responsivo */
+@media (max-width: 768px) {
+  .galeria-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 480px) {
+  .galeria-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Menu hamburger */
+.menu-hamburger {
+  display: none;
+  cursor: pointer;
+  padding: 10px;
+}
+
+.menu-hamburger div {
+  width: 25px;
+  height: 3px;
+  background-color: #333;
+  margin: 4px 0;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 15px;
+}
+
+@media (max-width: 600px) {
+  nav ul {
+    display: none;
+    flex-direction: column;
+  }
+
+  nav ul.ativo {
+    display: flex;
+  }
+
+  .menu-hamburger {
+    display: block;
+  }
+}
